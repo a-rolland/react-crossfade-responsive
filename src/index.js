@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
-import styles from './index.module.css'
+// import styles from './index.module.css'
+import styles from './Index.css'
 import React from 'react'
 
 const Crossfade = (props) => {
@@ -28,7 +29,9 @@ const Crossfade = (props) => {
     return (
       <img
         key={index}
-        className={`${styles.background} ${
+        className={`${
+          currentCarouselIndex === index ? 'active' : 'inactive'
+        } background ${styles.background} ${
           currentCarouselIndex === index ? styles.active : styles.inactive
         }`}
         src={element}
@@ -36,7 +39,11 @@ const Crossfade = (props) => {
     )
   })
 
-  return <div className={styles.backgroundBackground}>{carousel}</div>
+  return (
+    <div className={`backgroundBackground ${styles.backgroundBackground}`}>
+      {carousel}
+    </div>
+  )
 }
 
 export default Crossfade
