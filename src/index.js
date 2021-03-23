@@ -1,8 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
 import styles from './index.module.css'
 import React from 'react'
-function Crossfade({ images, customInterval }) {
-  const backgroundImages = images || []
+const Crossfade = (props) => {
+  const backgroundImages = props.images || []
   const carouselLength = backgroundImages.length
   const [currentCarouselIndex, setCarouselIndex] = React.useState(0)
 
@@ -15,7 +15,7 @@ function Crossfade({ images, customInterval }) {
             : currentCarouselIndex + 1
         return newIndex
       })
-    }, customInterval || 5000)
+    }, props.customInterval || 5000)
     return () => clearInterval(interval)
   }, [currentCarouselIndex])
 
