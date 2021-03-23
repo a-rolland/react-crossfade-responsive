@@ -1,8 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import styles from './index.module.css'
 import React from 'react'
+
 const Crossfade = (props) => {
-  const backgroundImages = props.images || []
+  const backgroundImages = props.images || [
+    'https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
+    'https://images.unsplash.com/photo-1616450030149-26a8bc9dd54f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
+    'https://images.unsplash.com/photo-1616445598565-5327a63e85d0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
+  ]
   const carouselLength = backgroundImages.length
   const [currentCarouselIndex, setCarouselIndex] = React.useState(0)
 
@@ -23,7 +28,6 @@ const Crossfade = (props) => {
     return (
       <img
         key={index}
-        // className={currentCarouselIndex === index ? 'active' : 'inactive'}
         className={`${styles.background} ${
           currentCarouselIndex === index ? styles.active : styles.inactive
         }`}
@@ -32,7 +36,6 @@ const Crossfade = (props) => {
     )
   })
 
-  // return <div id='background-background'>{carousel}</div>
   return <div className={styles.backgroundBackground}>{carousel}</div>
 }
 
