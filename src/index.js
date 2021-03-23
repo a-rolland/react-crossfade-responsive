@@ -2,7 +2,7 @@
 import styles from './index.module.css'
 import React from 'react'
 function Crossfade({ images, customInterval }) {
-  const backgroundImages = images
+  const backgroundImages = images || []
   const carouselLength = backgroundImages.length
   const [currentCarouselIndex, setCarouselIndex] = React.useState(0)
 
