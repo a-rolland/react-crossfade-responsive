@@ -3,6 +3,7 @@
 > Made with create-react-library
 
 /!\ Work in progress /!\
+//!\ Has dependecies issues for the moment //!\
 
 This is a very easy-to-use crossfade carousel. I created this one because I experiences in most of the cases issues when using the other ones. (Some of them makes white blinks during the transitions).
 
