@@ -1,7 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
 // import styles from './index.module.css'
-import styles from './Index.css'
+// import styles from './Index.css'
 import React from 'react'
+import { Background, BackgroundBackground } from './styles'
 
 const Crossfade = (props) => {
   const backgroundImages = props.images || [
@@ -27,22 +28,26 @@ const Crossfade = (props) => {
 
   const carousel = backgroundImages.map((element, index) => {
     return (
-      <img
+      // <img
+      <Background
         key={index}
-        className={`${
-          currentCarouselIndex === index ? 'active' : 'inactive'
-        } background ${styles.background} ${
-          currentCarouselIndex === index ? styles.active : styles.inactive
-        }`}
+        className={currentCarouselIndex === index ? 'active' : 'inactive'}
+        // className={`${
+        //   currentCarouselIndex === index ? 'active' : 'inactive'
+        // } background ${styles.background} ${
+        //   currentCarouselIndex === index ? styles.active : styles.inactive
+        // }`}
         src={element}
       />
     )
   })
 
   return (
-    <div className={`backgroundBackground ${styles.backgroundBackground}`}>
+    // <div className={`backgroundBackground ${styles.backgroundBackground}`}>
+    <BackgroundBackground>
+      {/* // className={`backgroundBackground ${styles.backgroundBackground}`} */}
       {carousel}
-    </div>
+    </BackgroundBackground>
   )
 }
 

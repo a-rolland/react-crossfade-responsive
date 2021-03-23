@@ -1,6 +1,6 @@
 {
   "name": "react-crossfade-responsive",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Made with create-react-library",
   "author": "a-rolland",
   "license": "MIT",
@@ -47,6 +47,7 @@
   ],
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.2.1"
   }
 }
