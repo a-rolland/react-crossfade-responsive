@@ -2,9 +2,13 @@
 // import styles from './index.module.css'
 // import styles from './Index.css'
 import React from 'react'
-import { Background, BackgroundBackground } from './styles'
+import { Container, Background, BackgroundBackground } from './styles'
 
 const Crossfade = (props) => {
+  const containerDimensions = {
+    height: props.customHeight ? props.customHeight : '100vh',
+    width: props.customWidth ? props.customWidth : '100%'
+  }
   const backgroundImages = props.images || [
     'https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
     'https://images.unsplash.com/photo-1616450030149-26a8bc9dd54f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
@@ -44,10 +48,12 @@ const Crossfade = (props) => {
 
   return (
     // <div className={`backgroundBackground ${styles.backgroundBackground}`}>
-    <BackgroundBackground>
-      {/* // className={`backgroundBackground ${styles.backgroundBackground}`} */}
-      {carousel}
-    </BackgroundBackground>
+    <Container style={containerDimensions}>
+      <BackgroundBackground>
+        {/* // className={`backgroundBackground ${styles.backgroundBackground}`} */}
+        {carousel}
+      </BackgroundBackground>
+    </Container>
   )
 }
 
