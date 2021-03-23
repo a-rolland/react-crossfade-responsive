@@ -1,10 +1,10 @@
 {
-  "name": "react-crossfade-carousel",
-  "version": "1.0.0",
+  "name": "react-crossfade-responsive",
+  "version": "1.0.3",
   "description": "Made with create-react-library",
   "author": "a-rolland",
   "license": "MIT",
-  "repository": "a-rolland/react-crossfade-carousel",
+  "repository": "a-rolland/react-crossfade-responsive",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
