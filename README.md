@@ -2,10 +2,9 @@
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/react-crossfade-responsive.svg)](https://www.npmjs.com/package/react-crossfade-responsive) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-crossfade-responsive.svg)](https://www.npmjs.com/package/react-crossfade-responsive) [![React](https://img.shields.io/badge/react-v.16.8-blue.svg)](https://reactjs.org/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-/!\ Work in progress /!\
-/!\ Works with React v16.8 and above /!\
+Works with React v16.8 and above.
 
 Please read before using. This is my first publication of a React Component of NPM so it may not be perfect.
 
@@ -72,8 +71,8 @@ To can see an example of this crossfade by visiting this page >> [demo page](htt
 | images     | no       | array  | [<3 random images>] |
 | height     | no       | string | 97vh                |
 | width      | no       | string | 100%                |
-| interval   | no       | number | 5000                |
-| transition | no       | number | 3000                |
+| interval   | no       | string | 5000                |
+| transition | no       | string | 3000                |
 
 ## Repo
 
