@@ -29,11 +29,11 @@ export const Background = styled.img`
 
   &.active {
     opacity: 1;
-    transition: opacity 3s;
+    transition: opacity ${(props) => props.transitionDelay};
   }
 
   &.inactive {
     opacity: 0;
-    transition: opacity 3s;
+    transition: opacity ${(props) => props.transitionDelay};
   }
 `

@@ -1,13 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
-// import styles from './index.module.css'
-// import styles from './Index.css'
 import React from 'react'
 import { Container, Background, BackgroundBackground } from './styles'
 
 const Crossfade = (props) => {
   const containerDimensions = {
-    height: props.customHeight ? props.customHeight : '100vh',
-    width: props.customWidth ? props.customWidth : '100%'
+    height: props.height ? props.height : '100vh',
+    width: props.width ? props.width : '100%'
   }
   const backgroundImages = props.images || [
     'https://images.unsplash.com/photo-1593642702909-dec73df255d7?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
@@ -26,7 +24,7 @@ const Crossfade = (props) => {
             : currentCarouselIndex + 1
         return newIndex
       })
-    }, props.customInterval || 5000)
+    }, props.interval || 5000)
     return () => clearInterval(interval)
   }, [currentCarouselIndex])
 
@@ -36,23 +34,20 @@ const Crossfade = (props) => {
       <Background
         key={index}
         className={currentCarouselIndex === index ? 'active' : 'inactive'}
-        // className={`${
-        //   currentCarouselIndex === index ? 'active' : 'inactive'
-        // } background ${styles.background} ${
-        //   currentCarouselIndex === index ? styles.active : styles.inactive
-        // }`}
         src={element}
+        transitionDelay={
+          props.transition ? `${props.transition / 1000}s` : '3s'
+        }
       />
     )
   })
 
   return (
-    // <div className={`backgroundBackground ${styles.backgroundBackground}`}>
-    <Container style={containerDimensions}>
-      <BackgroundBackground>
-        {/* // className={`backgroundBackground ${styles.backgroundBackground}`} */}
-        {carousel}
-      </BackgroundBackground>
+    <Container
+      height={containerDimensions.height}
+      width={containerDimensions.width}
+    >
+      <BackgroundBackground>{carousel}</BackgroundBackground>
     </Container>
   )
 }
