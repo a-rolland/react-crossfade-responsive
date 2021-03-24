@@ -75,6 +75,10 @@ To can see an example of this crossfade by visiting this page >> [demo page](htt
 | interval   | no       | number | 5000                |
 | transition | no       | number | 3000                |
 
+## Repo
+
+See the repo: [Github](https://github.com/a-rolland/react-crossfade-responsive)
+
 ## License
 
 MIT © [a-rolland](https://github.com/a-rolland)
