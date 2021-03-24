@@ -53,7 +53,7 @@ You can customize the interval setting the **interval** prop:
 You can customize the transition setting the **transition** prop:
 
 ```jsx
-<Crossfade images={testImages} interval={4000} transition={2000} />
+<Crossfade images={yourArray} interval='4000' transition='2000' />
 ```
 
 (1000 = 1 second).
