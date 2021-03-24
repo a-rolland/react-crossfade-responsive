@@ -18,8 +18,8 @@
     "node": ">=10"
   },
   "peerDependencies": {
-    "react": "^16.x || ^17.x",
-    "react-dom": "^16.x || ^17.x"
+    "react": "^>=16.8 || ^17.x",
+    "react-dom": "^>=16.8 || ^17.x"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
