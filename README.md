@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/react-crossfade-responsive.svg)](https://www.npmjs.com/package/react-crossfade-responsive) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 /!\ Work in progress /!\
-/!\ For the moment it only works with React v17.0.2 /!\
+/!\ Works with React v16.8 and above /!\
 
 Please read before using. This is my first publication of a React Component of NPM so it may not be perfect.
 
