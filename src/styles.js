@@ -8,10 +8,11 @@ export const Container = styled.div`
 
 export const BackgroundBackground = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  height: ${(props) => props.yRate || '100%'};
+  width: ${(props) => props.xRate || '100%'};
+  transform: translate(-50%, -50%);
   background-color: black;
 `
 

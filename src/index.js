@@ -47,7 +47,9 @@ const Crossfade = (props) => {
       height={containerDimensions.height}
       width={containerDimensions.width}
     >
-      <BackgroundBackground>{carousel}</BackgroundBackground>
+      <BackgroundBackground xRate={props.xRate} yRate={props.yRate}>
+        {carousel}
+      </BackgroundBackground>
     </Container>
   )
 }
