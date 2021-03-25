@@ -94,23 +94,15 @@ You can see an example of this crossfade by visiting this page >> [demo page](ht
 
 ## API
 
-| Name | Required | Type | Default |
-
+| Name       | Required | Type   | Default             |
 | ---------- | -------- | ------ | ------------------- |
-
-| images | no | array | [<3 random images>] |
-
-| height | no | string | 97vh |
-
-| width | no | string | 100% |
-
-| yRate | no | string | 100% |
-
-| xRate | no | string | 100% |
-
-| interval | no | string | 5000 |
-
-| transition | no | string | 3000 |
+| images     | no       | array  | [<3 random images>] |
+| height     | no       | string | 97vh                |
+| width      | no       | string | 100%                |
+| yRate      | no       | string | 100%                |
+| xRate      | no       | string | 100%                |
+| interval   | no       | string | 5000                |
+| transition | no       | string | 3000                |
 
 <br />
 
